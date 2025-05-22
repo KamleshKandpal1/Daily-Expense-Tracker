@@ -11,6 +11,24 @@
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		761780ED2CA45674006654EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761780EC2CA45674006654EE /* AppDelegate.swift */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		5787068F05B44D7C8CB520E3 /* AncizarSans-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 36FAE82EC1924166972558B8 /* AncizarSans-Black.ttf */; };
+		A49BE90B306E4E3E86680D6E /* AncizarSans-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 46068F82A9254763B8292A3F /* AncizarSans-BlackItalic.ttf */; };
+		DA23F67CCD7E4703AFE0DC4D /* AncizarSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1DBF53E974E541339828302B /* AncizarSans-Bold.ttf */; };
+		4D6A8832AE8F4DB698272C76 /* AncizarSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FFC3A6C687C140CD9A4E1556 /* AncizarSans-BoldItalic.ttf */; };
+		E896592EB35F47398D390523 /* AncizarSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA7CCAD783B14CBCBE213E35 /* AncizarSans-ExtraBold.ttf */; };
+		BD37A479C3644A9C9F7DBFA2 /* AncizarSans-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2A2AE8C852BC41F78432639B /* AncizarSans-ExtraBoldItalic.ttf */; };
+		9CF301409CE84DF888933006 /* AncizarSans-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EEE3A215EB56419C8D01C284 /* AncizarSans-ExtraLight.ttf */; };
+		B46A7A577EC04A98AADAE873 /* AncizarSans-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5474BE49089C44BC8CB6AAD5 /* AncizarSans-ExtraLightItalic.ttf */; };
+		0C7A12EA712B46258FEC8055 /* AncizarSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6304A147E090408EA1818B11 /* AncizarSans-Italic.ttf */; };
+		D24CCBEDBA27400190368549 /* AncizarSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC726AEFF0B841549EB1F5B6 /* AncizarSans-Light.ttf */; };
+		43D5E0BA35A545B19B0529FF /* AncizarSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 231D1442FB5940638B79C08A /* AncizarSans-LightItalic.ttf */; };
+		68504F09C92C4C4A874871B4 /* AncizarSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CA26931567204891B57272B4 /* AncizarSans-Medium.ttf */; };
+		DA85A2FAD945480694E56BDD /* AncizarSans-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E8DFDCFF5B304DCB9E48C5C4 /* AncizarSans-MediumItalic.ttf */; };
+		4AC81C22F23E4EAFA6225E85 /* AncizarSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3446C0EAF64F43769145D0EF /* AncizarSans-Regular.ttf */; };
+		B0CD1961C9E64A1E97F4B5DE /* AncizarSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4A1E036A6211436D933C9506 /* AncizarSans-SemiBold.ttf */; };
+		FF78AF51CDBA43B8B37C8B98 /* AncizarSans-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC2AD7C7BC10469E9CECA1E5 /* AncizarSans-SemiBoldItalic.ttf */; };
+		79DF018B33A24917BAFCAFB2 /* AncizarSans-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D286DDE858544EB48C017FE5 /* AncizarSans-Thin.ttf */; };
+		71706B8CE14F482E9566C467 /* AncizarSans-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EC7499EE487B44FDA49EA79F /* AncizarSans-ThinItalic.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +53,24 @@
 		761780EC2CA45674006654EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Daily/AppDelegate.swift; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Daily/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		36FAE82EC1924166972558B8 /* AncizarSans-Black.ttf */ = {isa = PBXFileReference; name = "AncizarSans-Black.ttf"; path = "../src/assets/fonts/AncizarSans-Black.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		46068F82A9254763B8292A3F /* AncizarSans-BlackItalic.ttf */ = {isa = PBXFileReference; name = "AncizarSans-BlackItalic.ttf"; path = "../src/assets/fonts/AncizarSans-BlackItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		1DBF53E974E541339828302B /* AncizarSans-Bold.ttf */ = {isa = PBXFileReference; name = "AncizarSans-Bold.ttf"; path = "../src/assets/fonts/AncizarSans-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		FFC3A6C687C140CD9A4E1556 /* AncizarSans-BoldItalic.ttf */ = {isa = PBXFileReference; name = "AncizarSans-BoldItalic.ttf"; path = "../src/assets/fonts/AncizarSans-BoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		FA7CCAD783B14CBCBE213E35 /* AncizarSans-ExtraBold.ttf */ = {isa = PBXFileReference; name = "AncizarSans-ExtraBold.ttf"; path = "../src/assets/fonts/AncizarSans-ExtraBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		2A2AE8C852BC41F78432639B /* AncizarSans-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; name = "AncizarSans-ExtraBoldItalic.ttf"; path = "../src/assets/fonts/AncizarSans-ExtraBoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		EEE3A215EB56419C8D01C284 /* AncizarSans-ExtraLight.ttf */ = {isa = PBXFileReference; name = "AncizarSans-ExtraLight.ttf"; path = "../src/assets/fonts/AncizarSans-ExtraLight.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		5474BE49089C44BC8CB6AAD5 /* AncizarSans-ExtraLightItalic.ttf */ = {isa = PBXFileReference; name = "AncizarSans-ExtraLightItalic.ttf"; path = "../src/assets/fonts/AncizarSans-ExtraLightItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		6304A147E090408EA1818B11 /* AncizarSans-Italic.ttf */ = {isa = PBXFileReference; name = "AncizarSans-Italic.ttf"; path = "../src/assets/fonts/AncizarSans-Italic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		CC726AEFF0B841549EB1F5B6 /* AncizarSans-Light.ttf */ = {isa = PBXFileReference; name = "AncizarSans-Light.ttf"; path = "../src/assets/fonts/AncizarSans-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		231D1442FB5940638B79C08A /* AncizarSans-LightItalic.ttf */ = {isa = PBXFileReference; name = "AncizarSans-LightItalic.ttf"; path = "../src/assets/fonts/AncizarSans-LightItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		CA26931567204891B57272B4 /* AncizarSans-Medium.ttf */ = {isa = PBXFileReference; name = "AncizarSans-Medium.ttf"; path = "../src/assets/fonts/AncizarSans-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E8DFDCFF5B304DCB9E48C5C4 /* AncizarSans-MediumItalic.ttf */ = {isa = PBXFileReference; name = "AncizarSans-MediumItalic.ttf"; path = "../src/assets/fonts/AncizarSans-MediumItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		3446C0EAF64F43769145D0EF /* AncizarSans-Regular.ttf */ = {isa = PBXFileReference; name = "AncizarSans-Regular.ttf"; path = "../src/assets/fonts/AncizarSans-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		4A1E036A6211436D933C9506 /* AncizarSans-SemiBold.ttf */ = {isa = PBXFileReference; name = "AncizarSans-SemiBold.ttf"; path = "../src/assets/fonts/AncizarSans-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		DC2AD7C7BC10469E9CECA1E5 /* AncizarSans-SemiBoldItalic.ttf */ = {isa = PBXFileReference; name = "AncizarSans-SemiBoldItalic.ttf"; path = "../src/assets/fonts/AncizarSans-SemiBoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		D286DDE858544EB48C017FE5 /* AncizarSans-Thin.ttf */ = {isa = PBXFileReference; name = "AncizarSans-Thin.ttf"; path = "../src/assets/fonts/AncizarSans-Thin.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		EC7499EE487B44FDA49EA79F /* AncizarSans-ThinItalic.ttf */ = {isa = PBXFileReference; name = "AncizarSans-ThinItalic.ttf"; path = "../src/assets/fonts/AncizarSans-ThinItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +129,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				032FE00D8C4A428A94473410 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -115,6 +152,32 @@
 			);
 			path = Pods;
 			sourceTree = "<group>";
+		};
+		032FE00D8C4A428A94473410 /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				36FAE82EC1924166972558B8 /* AncizarSans-Black.ttf */,
+				46068F82A9254763B8292A3F /* AncizarSans-BlackItalic.ttf */,
+				1DBF53E974E541339828302B /* AncizarSans-Bold.ttf */,
+				FFC3A6C687C140CD9A4E1556 /* AncizarSans-BoldItalic.ttf */,
+				FA7CCAD783B14CBCBE213E35 /* AncizarSans-ExtraBold.ttf */,
+				2A2AE8C852BC41F78432639B /* AncizarSans-ExtraBoldItalic.ttf */,
+				EEE3A215EB56419C8D01C284 /* AncizarSans-ExtraLight.ttf */,
+				5474BE49089C44BC8CB6AAD5 /* AncizarSans-ExtraLightItalic.ttf */,
+				6304A147E090408EA1818B11 /* AncizarSans-Italic.ttf */,
+				CC726AEFF0B841549EB1F5B6 /* AncizarSans-Light.ttf */,
+				231D1442FB5940638B79C08A /* AncizarSans-LightItalic.ttf */,
+				CA26931567204891B57272B4 /* AncizarSans-Medium.ttf */,
+				E8DFDCFF5B304DCB9E48C5C4 /* AncizarSans-MediumItalic.ttf */,
+				3446C0EAF64F43769145D0EF /* AncizarSans-Regular.ttf */,
+				4A1E036A6211436D933C9506 /* AncizarSans-SemiBold.ttf */,
+				DC2AD7C7BC10469E9CECA1E5 /* AncizarSans-SemiBoldItalic.ttf */,
+				D286DDE858544EB48C017FE5 /* AncizarSans-Thin.ttf */,
+				EC7499EE487B44FDA49EA79F /* AncizarSans-ThinItalic.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -185,6 +248,24 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				5787068F05B44D7C8CB520E3 /* AncizarSans-Black.ttf in Resources */,
+				A49BE90B306E4E3E86680D6E /* AncizarSans-BlackItalic.ttf in Resources */,
+				DA23F67CCD7E4703AFE0DC4D /* AncizarSans-Bold.ttf in Resources */,
+				4D6A8832AE8F4DB698272C76 /* AncizarSans-BoldItalic.ttf in Resources */,
+				E896592EB35F47398D390523 /* AncizarSans-ExtraBold.ttf in Resources */,
+				BD37A479C3644A9C9F7DBFA2 /* AncizarSans-ExtraBoldItalic.ttf in Resources */,
+				9CF301409CE84DF888933006 /* AncizarSans-ExtraLight.ttf in Resources */,
+				B46A7A577EC04A98AADAE873 /* AncizarSans-ExtraLightItalic.ttf in Resources */,
+				0C7A12EA712B46258FEC8055 /* AncizarSans-Italic.ttf in Resources */,
+				D24CCBEDBA27400190368549 /* AncizarSans-Light.ttf in Resources */,
+				43D5E0BA35A545B19B0529FF /* AncizarSans-LightItalic.ttf in Resources */,
+				68504F09C92C4C4A874871B4 /* AncizarSans-Medium.ttf in Resources */,
+				DA85A2FAD945480694E56BDD /* AncizarSans-MediumItalic.ttf in Resources */,
+				4AC81C22F23E4EAFA6225E85 /* AncizarSans-Regular.ttf in Resources */,
+				B0CD1961C9E64A1E97F4B5DE /* AncizarSans-SemiBold.ttf in Resources */,
+				FF78AF51CDBA43B8B37C8B98 /* AncizarSans-SemiBoldItalic.ttf in Resources */,
+				79DF018B33A24917BAFCAFB2 /* AncizarSans-Thin.ttf in Resources */,
+				71706B8CE14F482E9566C467 /* AncizarSans-ThinItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,0 +1,77 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "src/assets/fonts/AncizarSans-Black.ttf",
+      "sha1": "083def3ce7eec452e2fc81da3e40e789f22f4692"
+    },
+    {
+      "path": "src/assets/fonts/AncizarSans-BlackItalic.ttf",
+      "sha1": "869f9054c1f9ac7b039bec2169cedd70387d3598"
+    },
+    {
+      "path": "src/assets/fonts/AncizarSans-Bold.ttf",
+      "sha1": "2602459cabe96fb2652029ea640f6ffc2a796134"
+    },
+    {
+      "path": "src/assets/fonts/AncizarSans-BoldItalic.ttf",
+      "sha1": "dfc8dbfaf7585e4e602dc6affc478c36f866ffcc"
+    },
+    {
+      "path": "src/assets/fonts/AncizarSans-ExtraBold.ttf",
+      "sha1": "cc4dae1a4efbf97670656e403a603514573b0cb0"
+    },
+    {
+      "path": "src/assets/fonts/AncizarSans-ExtraBoldItalic.ttf",
+      "sha1": "2c4866fbc1de242c254f035b500b0dc406e27186"
+    },
+    {
+      "path": "src/assets/fonts/AncizarSans-ExtraLight.ttf",
+      "sha1": "bb14ca465d3d42dc2d264024bb80402210688780"
+    },
+    {
+      "path": "src/assets/fonts/AncizarSans-ExtraLightItalic.ttf",
+      "sha1": "cfbca090d6e57a43b9a187bdb2ffff1a45e17ff9"
+    },
+    {
+      "path": "src/assets/fonts/AncizarSans-Italic.ttf",
+      "sha1": "6ab2976156f69d0f87e3f481376209d543cf1d4f"
+    },
+    {
+      "path": "src/assets/fonts/AncizarSans-Light.ttf",
+      "sha1": "f41ef636dadf0683db986bd90339e120fdd82572"
+    },
+    {
+      "path": "src/assets/fonts/AncizarSans-LightItalic.ttf",
+      "sha1": "3dfd4934b1b4f1c0f9bf2a0c66a00d1f153641e2"
+    },
+    {
+      "path": "src/assets/fonts/AncizarSans-Medium.ttf",
+      "sha1": "19f04e2258898d53421cdf696c935f318ff94275"
+    },
+    {
+      "path": "src/assets/fonts/AncizarSans-MediumItalic.ttf",
+      "sha1": "80c68b50dfc2ef3d8d3bbf7d1538a580bc9db3b3"
+    },
+    {
+      "path": "src/assets/fonts/AncizarSans-Regular.ttf",
+      "sha1": "319cac6de09685bb647dbc12e24d52711caf6ae0"
+    },
+    {
+      "path": "src/assets/fonts/AncizarSans-SemiBold.ttf",
+      "sha1": "f8eb6179f903044544468fa6248cda83403ab62f"
+    },
+    {
+      "path": "src/assets/fonts/AncizarSans-SemiBoldItalic.ttf",
+      "sha1": "c8c739e409a52b2f98ca3078475f950ad44749ae"
+    },
+    {
+      "path": "src/assets/fonts/AncizarSans-Thin.ttf",
+      "sha1": "86531fecba563775a3fd1d8e21628d8ad5d8ca57"
+    },
+    {
+      "path": "src/assets/fonts/AncizarSans-ThinItalic.ttf",
+      "sha1": "d4484fb69edabe8ba173a95c62fd9658e9ef19d2"
+    }
+  ]
+}
