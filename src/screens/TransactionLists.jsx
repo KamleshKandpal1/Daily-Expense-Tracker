@@ -1,94 +1,166 @@
-import {View, Text, TouchableOpacity, StyleSheet} from 'react-native';
-import React from 'react';
-import {ScrollView} from 'react-native-gesture-handler';
-import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
+import React, {useState, useEffect} from 'react';
+import {View, Text, StyleSheet, TouchableOpacity, FlatList} from 'react-native';
+import {Menu, Divider, Provider} from 'react-native-paper';
+import Icon from 'react-native-vector-icons/Feather';
 import {useSelector} from 'react-redux';
-import {getTimeAgo} from '../utils/timeAgo';
-import {fontFamily} from '../config/fonts';
+import Pagination from '../components/Pagination';
+import TransactionList from '../components/TransactionList';
+
+const categories = [
+  'All',
+  'food',
+  'groceries',
+  'shopping',
+  'transport',
+  'bills',
+];
+const paymentTypes = ['All', 'cash', 'card', 'upi'];
 
 const TransactionLists = () => {
   const transactions =
     useSelector(state => state.transaction.transactions) || [];
+
+  const [amountOrder, setAmountOrder] = useState('asc');
+  const [selectedCategory, setSelectedCategory] = useState('All');
+  const [selectedPayment, setSelectedPayment] = useState('All');
+
+  const [categoryMenuVisible, setCategoryMenuVisible] = useState(false);
+  const [paymentMenuVisible, setPaymentMenuVisible] = useState(false);
+
+  const [filteredData, setFilteredData] = useState([]);
+  const [paginatedData, setPaginatedData] = useState([]);
+  const [currPage, setCurrPage] = useState(1);
+  const itemPerPage = 8;
+
+  useEffect(() => {
+    let data = [...transactions];
+
+    if (selectedCategory !== 'All') {
+      data = data.filter(t => t.category === selectedCategory);
+    }
+
+    if (selectedPayment !== 'All') {
+      data = data.filter(t => t.paymentType === selectedPayment);
+    }
+
+    if (amountOrder === 'asc') data.sort((a, b) => a.amount - b.amount);
+    else if (amountOrder === 'desc') data.sort((a, b) => b.amount - a.amount);
+
+    setFilteredData(data);
+    setCurrPage(1);
+  }, [transactions, selectedCategory, selectedPayment, amountOrder]);
+
+  useEffect(() => {
+    const start = (currPage - 1) * itemPerPage;
+    const end = start + itemPerPage;
+    setPaginatedData(filteredData.slice(start, end));
+  }, [currPage, filteredData]);
+
+  const cycleAmountOrder = () => {
+    if (amountOrder === 'asc') setAmountOrder('desc');
+    else setAmountOrder('asc');
+  };
+
   return (
-    <ScrollView style={styles.container}>
-      {transactions.map(item => (
-        <TouchableOpacity key={item.date}>
-          <View style={styles.cardInfoBox}>
-            <View style={styles.cardDetails}>
-              <View style={styles.cardBox}>
-                <MaterialCommunityIcons
-                  name={item.icon}
-                  color="#fff"
-                  size={24}
-                />
-              </View>
-              <View>
-                <Text style={styles.cardAmount}>{item.paymentType}</Text>
-                <Text style={styles.cardType}>{getTimeAgo(item.date)}</Text>
-                {/* <Text style={styles.cardAmount}>{item.category}</Text> */}
-              </View>
-            </View>
-            <Text style={styles.amount}>
-              {Number(item.amount).toLocaleString('en-IN', {
-                style: 'currency',
-                currency: 'INR',
-              })}
+    <Provider>
+      <View style={styles.container}>
+        <View style={styles.filterBar}>
+          <TouchableOpacity style={styles.filterBtn} onPress={cycleAmountOrder}>
+            <Icon name="filter" size={16} color="#555" />
+            <Text style={styles.filterText}>
+              Amount: {amountOrder.slice(0, 3)}
             </Text>
-          </View>
-        </TouchableOpacity>
-      ))}
-    </ScrollView>
+          </TouchableOpacity>
+
+          <Menu
+            visible={categoryMenuVisible}
+            onDismiss={() => setCategoryMenuVisible(false)}
+            anchor={
+              <TouchableOpacity
+                onPress={() => setCategoryMenuVisible(true)}
+                style={styles.filterBtn}>
+                <Text style={styles.filterText}>
+                  Category: {selectedCategory.slice(0, 3)}
+                </Text>
+              </TouchableOpacity>
+            }>
+            {categories.map(cat => (
+              <Menu.Item
+                key={cat}
+                title={cat}
+                style={{textTransform: 'capitalize'}}
+                onPress={() => {
+                  setSelectedCategory(cat);
+                  setCategoryMenuVisible(false);
+                }}
+              />
+            ))}
+          </Menu>
+
+          <Menu
+            visible={paymentMenuVisible}
+            onDismiss={() => setPaymentMenuVisible(false)}
+            anchor={
+              <TouchableOpacity
+                onPress={() => setPaymentMenuVisible(true)}
+                style={styles.filterBtn}>
+                <Text style={styles.filterText}>
+                  Payment: {selectedPayment.slice(0, 3)}
+                </Text>
+              </TouchableOpacity>
+            }>
+            {paymentTypes.map(pay => (
+              <Menu.Item
+                key={pay}
+                title={pay}
+                onPress={() => {
+                  setSelectedPayment(pay);
+                  setPaymentMenuVisible(false);
+                }}
+              />
+            ))}
+          </Menu>
+        </View>
+
+        <TransactionList data={paginatedData} />
+
+        <Pagination
+          currPage={currPage}
+          setCurrPage={setCurrPage}
+          totalPage={Math.ceil(filteredData.length / itemPerPage)}
+        />
+      </View>
+    </Provider>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    marginVertical: 15,
-    marginHorizontal: 20,
-    paddingHorizontal: 10,
-    height: '100%',
+    margin: 20,
   },
-  cardInfoBox: {
-    flex: 1,
-    borderRadius: 15,
-    backgroundColor: '#b9d9ae',
-    paddingHorizontal: 15,
+  filterBar: {
     flexDirection: 'row',
+    flexWrap: 'wrap',
+    gap: 8,
+    marginBottom: 10,
     alignItems: 'center',
-    justifyContent: 'space-between',
-    marginVertical: 8,
-    // height: 60,
   },
-  cardDetails: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-    paddingVertical: 10,
-    gap: 20,
-  },
-  cardBox: {
-    backgroundColor: '#030303',
-    borderRadius: 10,
-    paddingVertical: 10,
+  filterBtn: {
     paddingHorizontal: 12,
+    paddingVertical: 8,
+    backgroundColor: '#d4e9d9',
+    borderRadius: 8,
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 6,
   },
-  cardAmount: {
-    color: '#030303',
-    fontFamily: fontFamily[600],
-    fontSize: 18,
-    letterSpacing: 1,
+  filterText: {
+    fontSize: 14,
+    fontWeight: '600',
+    color: '#333',
     textTransform: 'capitalize',
   },
-  cardType: {
-    color: '#a8acad',
-    fontFamily: fontFamily[400],
-    fontSize: 12,
-    letterSpacing: 1,
-  },
-  amount: {
-    fontSize: 16,
-    fontFamily: fontFamily[600],
-  },
 });
+
 export default TransactionLists;

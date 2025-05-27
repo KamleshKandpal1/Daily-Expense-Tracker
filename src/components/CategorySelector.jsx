@@ -1,8 +1,9 @@
-import {View, Text, StyleSheet, TouchableOpacity, FlatList} from 'react-native';
+import {View, Text, StyleSheet, TouchableOpacity} from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import {fontFamily} from '../config/fonts';
 import {useDispatch, useSelector} from 'react-redux';
 import {setCategory} from '../redux/transactionSlice';
+import {ScrollView} from 'react-native-gesture-handler';
 
 const categories = [
   {label: 'Food', value: 'food', icon: 'silverware-fork-knife'},
@@ -18,16 +19,15 @@ const CategorySelector = () => {
 
   return (
     <View style={{marginVertical: 15}}>
-      <FlatList
-        data={categories}
+      <ScrollView
         horizontal
         showsHorizontalScrollIndicator={false}
-        keyExtractor={item => item.value}
-        contentContainerStyle={styles.list}
-        renderItem={({item}) => {
+        contentContainerStyle={styles.gridContainer}>
+        {categories.map(item => {
           const isSelected = selectedCategory === item.value;
           return (
             <TouchableOpacity
+              key={item.value}
               style={[
                 styles.categoryBox,
                 isSelected && styles.selectedCategory,
@@ -46,8 +46,8 @@ const CategorySelector = () => {
               </Text>
             </TouchableOpacity>
           );
-        }}
-      />
+        })}
+      </ScrollView>
     </View>
   );
 };

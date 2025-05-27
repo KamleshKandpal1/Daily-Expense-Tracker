@@ -3,7 +3,7 @@ import {View, Text, StyleSheet, TouchableOpacity} from 'react-native';
 import {RadioButton} from 'react-native-paper';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import {useDispatch, useSelector} from 'react-redux';
-import {resetPaymentType, setPaymentType} from '../redux/transactionSlice';
+import {setPaymentType} from '../redux/transactionSlice';
 
 const paymentOptions = [
   {
@@ -55,7 +55,7 @@ const PaymentOptions = () => {
             <RadioButton
               value={option.value}
               status={isSelected ? 'checked' : 'unchecked'}
-              onPress={() => dispatch(resetPaymentType(option.value))}
+              onPress={() => dispatch(setPaymentType(option.value))}
               color="#4caf50"
             />
           </TouchableOpacity>

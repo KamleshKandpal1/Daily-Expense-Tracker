@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {
   View,
   Text,
@@ -23,6 +23,7 @@ const Transaction = () => {
   const dispatch = useDispatch();
   const navigation = useNavigation();
   const {category, paymentType, icon} = useSelector(state => state.transaction);
+  const [showErrors, setShowErrors] = useState(false);
 
   const initialValues = {
     amount: '',
@@ -35,21 +36,23 @@ const Transaction = () => {
   });
 
   const handleSubmit = values => {
+    setShowErrors(true);
+    if (!category || !paymentType) return;
+
     const transaction = {
       amount: Number(values.amount),
+      id: Date.now().toString(),
+      date: new Date().toISOString(),
       category,
       paymentType,
       icon,
-      date: new Date().toISOString(),
     };
 
     dispatch(addTransaction(transaction));
 
-    if (category === 'Income') {
-      dispatch(addIncome(transaction.amount));
-    } else {
-      dispatch(addSpent(transaction.amount));
-    }
+    category === 'Income'
+      ? dispatch(addIncome(transaction.amount))
+      : dispatch(addSpent(transaction.amount));
 
     dispatch(resetTransaction());
     navigation.goBack();
@@ -61,7 +64,15 @@ const Transaction = () => {
         initialValues={initialValues}
         validationSchema={validationSchema}
         onSubmit={handleSubmit}>
-        {({handleChange, handleSubmit, values, touched, errors, resetForm}) => (
+        {({
+          handleChange,
+          handleSubmit,
+          values,
+          touched,
+          errors,
+          resetForm,
+          isValid,
+        }) => (
           <>
             {/* Amount Input */}
             <Text style={styles.heading}>Amount</Text>
@@ -79,10 +90,17 @@ const Transaction = () => {
             {/* Category Selector */}
             <Text style={styles.heading}>Category</Text>
             <CategorySelector />
+            {showErrors && !category && (
+              <Text style={styles.errorText}>Please select a category</Text>
+            )}
 
             {/* Payment Options */}
             <Text style={styles.heading}>Payment Type</Text>
             <PaymentOptions />
+
+            {showErrors && !paymentType && (
+              <Text style={styles.errorText}>Please select a payment type</Text>
+            )}
 
             {/* Add Button */}
             <View style={styles.btns}>
@@ -91,14 +109,20 @@ const Transaction = () => {
                 onPress={() => {
                   dispatch(resetTransaction());
                   resetForm();
+                  setShowErrors(false);
                 }}>
                 <View>
                   <Text style={[styles.resetText, styles.text]}>Reset</Text>
                 </View>
               </TouchableOpacity>
               <TouchableOpacity
-                style={[styles.addBtn, styles.Btn]}
-                onPress={handleSubmit}>
+                style={[
+                  styles.addBtn,
+                  styles.Btn,
+                  (!isValid || !category || !paymentType) && {opacity: 0.5},
+                ]}
+                onPress={handleSubmit}
+                disabled={!isValid || !category || !paymentType}>
                 <View style={[styles.addContent]}>
                   <FontAwesome name="rupee" color="#fff" size={20} />
                   <Text style={[styles.addText, styles.text]}>Add</Text>

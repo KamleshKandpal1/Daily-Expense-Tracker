@@ -27,8 +27,21 @@ const transactionSlice = createSlice({
       state.transactions.push(action.payload);
     },
     deleteTransaction: (state, action) => {
-      state.transactions.pop(action.payload);
+      state.transactions = state.transactions.filter(
+        transaction => transaction.id !== action.payload,
+      );
     },
+
+    // editTransaction: (state, action) => {
+    //   const {id, updateData} = action.payload;
+    //   const index = state.transactions.findIndex(tnx => tnx.id === id);
+    //   if (index !== -1) {
+    //     state.transactions[index] = {
+    //       ...state.transactions[index],
+    //       ...updateData,
+    //     };
+    //   }
+    // },
     resetTransaction: state => {
       state.amount = '';
       state.category = '';
@@ -46,6 +59,7 @@ export const {
   resetPaymentType,
   addTransaction,
   deleteTransaction,
+  editTransaction,
 } = transactionSlice.actions;
 
 export default transactionSlice.reducer;
