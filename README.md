@@ -1,98 +1,74 @@
-## 💸 React Native Personal Finance Tracker
+# 💸 React Native Personal Finance Tracker
 
+A beautifully crafted personal finance tracker built with **React Native**, styled using **Tailwind CSS via NativeWind**, and powered by **AsyncStorage** for local data persistence. This app helps users manage and monitor their daily finances with a clean, intuitive UI and powerful features.
 
-A clean and efficient personal finance tracking app built with **React Native**, styled using **Tailwind CSS via NativeWind**, and powered by **AsyncStorage** for data persistence.
+---
 
-* * *
+## ✨ Features
 
-✨ Features
-----------
+- **💰 Add Transactions**
+  - Enter transaction amount
+  - Choose category: `Food`, `Groceries`, `Shopping`, `Transport`, `Bills`
+  - Select payment method: `Cash`, `Card`, `UPI`
 
-*   **💰 Add Transactions**:
-    
-    *   Enter Amount
-        
-    *   Choose Category (`Food`, `Groceries`, `Shopping`, `Transport`, `Bills`)
-        
-    *   Select Payment Method (`Cash`, `Card`, `UPI`)
-        
-*   **📊 Dashboard Overview**:
-    
-    *   Dynamic calculation of Total Income, Spent & Balance
-        
-    *   Static card for quick insights
-        
-*   **🧾 Transaction List**:
-    
-    *   Displays latest transactions first
-        
-    *   Delete unwanted transactions (no edit feature — re-entry is simpler)
-        
-*   **📂 View All Transactions**:
-    
-    *   Paginated transaction history
-        
-    *   Smart filters:
-        
-        *   Sort by Amount (`Ascending`, `Descending`)
-            
-        *   Filter by Category or Payment Method
-            
+- **📊 Dashboard Overview**
+  - Displays real-time **Income**, **Spent**, and **Current Balance**
+  - Static insight cards for quick overviews
 
-* * *
+- **🧾 Dynamic Transaction List**
+  - Most recent transactions displayed first
+  - Ability to delete any transaction (no edit — for simplicity, just re-add)
 
-🛠 Tech Stack
--------------
+- **📂 View All Transactions**
+  - Paginated history view for long transaction lists
+  - Filter support:
+    - Sort by **Amount**: `Ascending` or `Descending`
+    - Filter by **Category** and **Payment Method**
 
-*   ⚛️ React Native
-    
-*   🧩 Redux Toolkit
-    
-*   🗂️ AsyncStorage
-    
-*   🎨 Tailwind CSS via NativeWind
-    
-*   🖌️ React Native Paper (UI components)
-    
-*   🧱 React Native Vector Icons
-    
+---
 
-* * *
+## 🛠 Tech Stack
 
-📸 Screenshots / Demo
----------------------
+| Tech                   | Purpose                          |
+|------------------------|----------------------------------|
+| ⚛️ React Native         | App development                  |
+| 🧩 Redux Toolkit         | State management                 |
+| 🗂️ AsyncStorage          | Local storage for transactions   |
+| 🎨 Tailwind + NativeWind | Styling & layout                 |
+| 🖌️ React Native Paper   | UI components                    |
+| 🧱 Vector Icons          | Category & UI icons              |
 
-Home Screen
+---
 
-Transaction List with Filters
+## 📸 Screenshots / Demo
 
-Add Transaction Screen
+> ⚠️ Replace the following with your actual screenshots!
 
+| Dashboard                         | Transactions with Filters             | Add Transaction                     |
+|----------------------------------|---------------------------------------|-------------------------------------|
+| ![Home](./screenshots/home.png) | ![Filters](./screenshots/filters.png) | ![Add](./screenshots/add.png)       |
 
-* * *
+---
 
-📝 Notes
---------
+## 📝 Notes
 
-*   I chose not to add an edit feature — it's easier to delete and re-add a transaction if needed.
-    
-*   Data is stored locally using AsyncStorage — making the app fully offline-capable.
-    
-*   Designed with simplicity and responsiveness in mind using Tailwind + NativeWind.
-    
+- 🔁 **No Edit Option**: Simplified UX — if a transaction is incorrect, just delete and re-add it.
+- 📴 **Offline Support**: Data is stored locally via AsyncStorage, so no internet connection is required.
+- 🎨 **Clean Design**: Built with Tailwind via NativeWind for a modern, consistent UI.
 
-* * *
+---
 
-📦 Installation
----------------
+## 🚀 Getting Started
 
-bash
-
-CopyEdit
-
-`git clone https://github.com/your-username/finance-tracker-native.git
+```bash
+git clone https://github.com/your-username/finance-tracker-native.git
 cd finance-tracker-native
-npm install` 
+npm install
+npx react-native run-android
 
-`npx expo start`
-================
+```
+# 🙌 Author
+
+**Kamlesh Kandpal**
+
+- | [🔗 GitHub](https://github.com/KamleshKandpal1)   | [🔗 LinkedIn](https://www.linkedin.com/in/kamlesh-kandpal/)   | [🌐 Portfolio](https://kamlesh-kandpal.vercel.app/)                  
