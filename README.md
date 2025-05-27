@@ -45,11 +45,9 @@ A beautifully crafted personal finance tracker built with **React Native**, styl
 
 ## 📸 Screenshots / Demo
 
-> ⚠️ Replace the following with your actual screenshots!
-
 | Dashboard                           | Transactions with Filters                 | Add Transaction                   |
 | ----------------------------------- | ----------------------------------------- | --------------------------------- |
-| ![Home](./src/screenshoot/home.jpg) | ![Filters](./src/screenshoot/filters.jpg) | ![Add](./src/screenshoot/add.jpg) |
+| ![Home](./src/screenshots/home.jpg) | ![Filters](./src/screenshots/filters.jpg) | ![Add](./src/screenshots/add.jpg) |
 
 ---
 
