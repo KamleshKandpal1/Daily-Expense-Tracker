@@ -1,8 +1,5 @@
-##### 💸 React Native Personal Finance Tracker
+## 💸 React Native Personal Finance Tracker
 
-  
-
-  
 
 A clean and efficient personal finance tracking app built with **React Native**, styled using **Tailwind CSS via NativeWind**, and powered by **AsyncStorage** for data persistence.
 
@@ -71,7 +68,6 @@ Transaction List with Filters
 
 Add Transaction Screen
 
-> 📂 Add your screenshots in a `screenshots/` folder in your repo for the images to display correctly.
 
 * * *
 
