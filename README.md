@@ -53,7 +53,7 @@ A beautifully crafted personal finance tracker built with **React Native**, styl
 
 ### 🎥 Demo Video
 
-[![Watch Demo](https://img.youtube.com/vi/s-LWHTt87hw/0.jpg)](https://www.youtube.com/watch?v=s-LWHTt87hw)
+[![Watch Demo](https://img.youtube.com/vi/2Pmmqnk_kG8/0.jpg)](https://www.youtube.com/watch?v=2Pmmqnk_kG8)
 
 ---
 
