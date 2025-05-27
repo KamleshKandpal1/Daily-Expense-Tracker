@@ -7,15 +7,18 @@ A beautifully crafted personal finance tracker built with **React Native**, styl
 ## ✨ Features
 
 - **💰 Add Transactions**
+
   - Enter transaction amount
   - Choose category: `Food`, `Groceries`, `Shopping`, `Transport`, `Bills`
   - Select payment method: `Cash`, `Card`, `UPI`
 
 - **📊 Dashboard Overview**
+
   - Displays real-time **Income**, **Spent**, and **Current Balance**
   - Static insight cards for quick overviews
 
 - **🧾 Dynamic Transaction List**
+
   - Most recent transactions displayed first
   - Ability to delete any transaction (no edit — for simplicity, just re-add)
 
@@ -29,14 +32,14 @@ A beautifully crafted personal finance tracker built with **React Native**, styl
 
 ## 🛠 Tech Stack
 
-| Tech                   | Purpose                          |
-|------------------------|----------------------------------|
-| ⚛️ React Native         | App development                  |
-| 🧩 Redux Toolkit         | State management                 |
-| 🗂️ AsyncStorage          | Local storage for transactions   |
-| 🎨 Tailwind + NativeWind | Styling & layout                 |
-| 🖌️ React Native Paper   | UI components                    |
-| 🧱 Vector Icons          | Category & UI icons              |
+| Tech                     | Purpose                        |
+| ------------------------ | ------------------------------ |
+| ⚛️ React Native          | App development                |
+| 🧩 Redux Toolkit         | State management               |
+| 🗂️ AsyncStorage          | Local storage for transactions |
+| 🎨 Tailwind + NativeWind | Styling & layout               |
+| 🖌️ React Native Paper    | UI components                  |
+| 🧱 Vector Icons          | Category & UI icons            |
 
 ---
 
@@ -44,9 +47,9 @@ A beautifully crafted personal finance tracker built with **React Native**, styl
 
 > ⚠️ Replace the following with your actual screenshots!
 
-| Dashboard                         | Transactions with Filters             | Add Transaction                     |
-|----------------------------------|---------------------------------------|-------------------------------------|
-| ![Home](./screenshots/home.png) | ![Filters](./screenshots/filters.png) | ![Add](./screenshots/add.png)       |
+| Dashboard                           | Transactions with Filters                 | Add Transaction                   |
+| ----------------------------------- | ----------------------------------------- | --------------------------------- |
+| ![Home](./src/screenshoot/home.jpg) | ![Filters](./src/screenshoot/filters.jpg) | ![Add](./src/screenshoot/add.jpg) |
 
 ---
 
@@ -67,8 +70,9 @@ npm install
 npx react-native run-android
 
 ```
+
 # 🙌 Author
 
 **Kamlesh Kandpal**
 
-- | [🔗 GitHub](https://github.com/KamleshKandpal1)   | [🔗 LinkedIn](https://www.linkedin.com/in/kamlesh-kandpal/)   | [🌐 Portfolio](https://kamlesh-kandpal.vercel.app/)                  
+- | [🔗 GitHub](https://github.com/KamleshKandpal1) | [🔗 LinkedIn](https://www.linkedin.com/in/kamlesh-kandpal/) | [🌐 Portfolio](https://kamlesh-kandpal.vercel.app/)
